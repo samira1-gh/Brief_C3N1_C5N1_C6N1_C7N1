@@ -1,0 +1,34 @@
+<!-- Question 1 -->
+SELECT Name FROM `pieces`
+<!-- Question 2 -->
+SELECT * FROM Providers;
+<!-- Question 3 -->
+SELECT Piece, AVG(Price)
+    FROM Provides
+GROUP BY Piece;
+<!-- Question 4 -->
+SELECT Name FROM providers INNER JOIN provides 
+ON providers.Code=provides.Provider 
+WHERE piece=1
+<!-- Question 5 -->
+SELECT Name FROM pieces INNER JOIN provides 
+ON pieces.Code=provides.Piece 
+WHERE Provider='HAL'
+<!-- Question 6 -->
+SELECT pieces.Name,providers.Name,MAX(Price) 
+FROM provides INNER JOIN pieces on pieces.Code=provides.Piece 
+              INNER JOIN providers ON providers.Code=provides.Provider
+<!-- Question 7 -->
+Update pieces
+SET Name='pignons'
+WHERE code=1
+INSERT INTO Provides(Piece, Provider, Price) VALUES(1,'TNBC',7);
+<!-- Question 8 -->
+UPDATE provides 
+SET Price=Price+1
+<!-- Question 9 -->
+DELETE FROM provides 
+WHERE Provider='RBT'AND Piece=4;
+<!-- Question 10  -->
+DELETE FROM provides 
+WHERE Provider='RBT'
