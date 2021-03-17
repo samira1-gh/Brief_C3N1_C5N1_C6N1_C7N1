@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contunu{
+    background-image: url(./img/fond-de-nature-de-paysage-d-automne-les-fleurs-sèches-avec-de-l-eau-se-laisse-tomber-après-la-pluie-sur-le-champ-bannière-75038244.jpg);
+  
+    width: 43vw;
+    height: 283px;
+    position: relative;
+    left: 30%;
+    top: 141px;
+    padding-top: 1%;
+    box-shadow: 28px 42px 20px #e0e0e0;
+    /* background-color: #D5884D; */
+    text-align: center;
+
+/* .button{
+    color: #fff;
+    background-color: #D5884D;
+    width: 80%;
+    height: 15%;
+    margin-top: 5%;
+} */
+}
+.input{
+border: 1px solid white;
+    background: rgba(0, 0, 0, 0.20);
+    height: 10%;
+}
+.submit{
+width: 25%;
+background-color:white ;
+margin-top: 3%;
+border: 1px solid white;
+ height: 10%;
+
+}
